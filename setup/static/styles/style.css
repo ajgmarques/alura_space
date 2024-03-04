@@ -242,6 +242,7 @@ table {
 
 .imagem__descricao {
     font-size: 0.7rem;
+    text-align: justify;
 }
 
 .menu-lateral {

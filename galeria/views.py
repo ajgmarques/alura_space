@@ -15,3 +15,12 @@ def imagem(request, foto_id):
         'fotografia': fotografia,
         }
     )
+
+
+def buscar(request):
+    fotografias = Fotografia.objects.order_by('created_at').filter(publicada=True)
+    if 'buscar' in request.GET:
+        nome_a_buscar = request.GET['buscar']
+        if nome_a_buscar:
+            fotografias = fotografias.filter(nome__icontains=nome_a_buscar)
+    return render(request, 'galeria/buscar.html', {'cards': fotografias})
