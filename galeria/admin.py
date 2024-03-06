@@ -8,7 +8,7 @@ class ListandoFotografias(admin.ModelAdmin):
     list_display = ('id', 'publicada', 'nome', 'legenda', 'foto')
     list_display_links = ('id', 'nome')
     search_fields = ('nome', 'descricao',)  # também pode ser uma lista ['nome']
-    list_filter = ['categoria', 'publicada']
+    list_filter = ['categoria', 'created_by', 'publicada']
     list_editable = ['publicada']
     list_per_page = 10
     search_help_text = 'Pesquisa em nome e descrição das fotografias'
