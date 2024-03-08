@@ -153,13 +153,13 @@ table {
     background-color: #D9D9D940;
     border-radius: 8px;
     border: 2px solid transparent;
-    font-size: 1.2rem;
+    font-size: 1rem;
     left: 310px;
     margin-right: 1.5rem;
     padding: .5rem .5rem;
     position: absolute;
     text-align: center;
-    top: 20px;
+    top: 15px;
     width: 100px;
 }
 
